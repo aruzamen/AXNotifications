@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r41-x7-1nZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications Controller-->
+        <scene sceneID="4U6-d2-56M">
+            <objects>
+                <viewController id="r41-x7-1nZ" customClass="AXNotificationsController" customModule="AXCore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cZ-w2-l6E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yI-Z6-jf6">
+                                <rect key="frame" x="100" y="220" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-P2-J5V">
+                                <rect key="frame" x="50" y="291" width="275" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.46059155270000002" green="0.63392653850000003" blue="0.85513166240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfg-ga-wVF">
+                                <rect key="frame" x="50" y="329" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="slF-qh-rPr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TQw-Cv-WNo" firstAttribute="trailing" secondItem="Lfg-ga-wVF" secondAttribute="trailing" constant="50" id="68h-mO-GJV"/>
+                            <constraint firstItem="5yI-Z6-jf6" firstAttribute="top" secondItem="TQw-Cv-WNo" secondAttribute="top" constant="200" id="7Cc-o4-RF8"/>
+                            <constraint firstItem="fhj-P2-J5V" firstAttribute="top" secondItem="5yI-Z6-jf6" secondAttribute="bottom" constant="50" id="8TT-Xs-WbM"/>
+                            <constraint firstItem="Lfg-ga-wVF" firstAttribute="leading" secondItem="TQw-Cv-WNo" secondAttribute="leading" constant="50" id="A6h-hG-5sx"/>
+                            <constraint firstItem="5yI-Z6-jf6" firstAttribute="leading" secondItem="TQw-Cv-WNo" secondAttribute="leading" constant="100" id="H0k-25-Fp6"/>
+                            <constraint firstItem="TQw-Cv-WNo" firstAttribute="trailing" secondItem="5yI-Z6-jf6" secondAttribute="trailing" constant="100" id="irW-Xh-qJA"/>
+                            <constraint firstItem="TQw-Cv-WNo" firstAttribute="trailing" secondItem="fhj-P2-J5V" secondAttribute="trailing" constant="50" id="o5V-D2-DD3"/>
+                            <constraint firstItem="fhj-P2-J5V" firstAttribute="leading" secondItem="TQw-Cv-WNo" secondAttribute="leading" constant="50" id="sLP-Zn-S8k"/>
+                            <constraint firstItem="Lfg-ga-wVF" firstAttribute="top" secondItem="fhj-P2-J5V" secondAttribute="bottom" constant="20" id="ul7-3Z-djP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TQw-Cv-WNo"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Lfg-ga-wVF" id="55N-CV-vLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vL-v2-H5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
